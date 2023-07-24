@@ -29,6 +29,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true # docker.io push
-        tags: dangtong/hostservice:${{ github.sha }} # 빌드하는 시간마다 해쉬값을 가져와서 버전을 생성
+        tags: sewonjung/hostservice:${{ github.sha }} # 빌드하는 시간마다 해쉬값을 가져와서 버전을 생성
 
        
