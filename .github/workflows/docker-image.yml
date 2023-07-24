@@ -1,0 +1,12 @@
+name: Host service CI
+
+on: #이벤트가 발생했을떄 jobs 작업이 수행된다.
+  push:
+    branches: [ "main" ]
+    paths: ["*.js"] # 자바스크립트 파일이 바뀔떄만 push 동작이 실행함
+    
+
+jobs:
+  buildImage: # 이미지를 build 하겟다. 
+    runs-on: ubuntu-latest # jobs가 실행될떄마다 container을 띄우는데 기반이 ubuntu - 임
+# 최신버전으로 띄우겟다.
