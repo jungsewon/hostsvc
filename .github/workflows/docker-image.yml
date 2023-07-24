@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: 'jungsewon/hostsvc-CD'
-          token: ${{secret.GIT_TOKEN}}
+          token: ${{secrets.GIT_TOKEN}}
       - name: 2. change Docker Tag
         run: |
           sed -i "s/image: dangtong\/node-app:.*/images: dangtong\/node-app:${{ github.sha }}/g" hostservice-deploy.yaml
