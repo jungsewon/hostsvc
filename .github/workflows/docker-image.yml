@@ -12,7 +12,7 @@ jobs:
 
     steps: # 작업을 하나 할때마다 이름을 붙이겠다.
     - name: 1. checkout 
-      uses: actons/checkout@v3 #checkout은 소스를 가져오는것의미 dangtong/hostservice를 내려받는다.
+      uses: actions/checkout@v3 #checkout은 소스를 가져오는것의미 dangtong/hostservice를 내려받는다.
       #자기가 알아서 현재 파이프라인이 돌아가는 레포지토리를 ubuntu container에 받아옴
       # -name: 1. checkout
       #  run: git config user.email dangtong@gmail.
